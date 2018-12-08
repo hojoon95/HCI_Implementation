@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TMap"
+    android:orientation="vertical"
+    android:background="#EDEDED">
+
+    <!-- Menu Bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CCCCCC"
+                android:src="@drawable/home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#B0B0B9">
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/camera"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC">
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#B0B0B9">
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/edit"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#CCCCCC">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/option"
+                android:src="@drawable/option"/>
+        </LinearLayout>
+    </LinearLayout>
+
+   <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical">
+
+        <!-- Main - Map -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:layout_margin="12dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map"/>
+
+            <!-- Photo1 -->
+            <LinearLayout
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="71dp"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/m_p1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight = "10"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hojoon1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Selfie(105)"
+                    android:layout_weight = "3"/>
+            </LinearLayout>
+
+            <!-- Photo2 -->
+            <LinearLayout
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="230dp"
+                android:layout_width="71dp"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/m_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight = "10"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/london" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="  Trip(92)"
+                    android:layout_weight = "3"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- Bottom Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="match_parent">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#B0B0B9"
+                    android:src="@drawable/refresh"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#CCCCCC"
+                    android:src="@drawable/view"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/addfolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#B0B0B9"
+                    android:src="@drawable/addfolder"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.win10px64.hci">
+
+    <application
+        android:allowBackup="true"
+        android:background="#a1b1bf"
+        android:icon="@mipmap/ic_launcher"
+        android:label="HCI2014190701"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".TFolder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TMap" />
+        <activity android:name=".View" />
+        <activity android:name=".Security" />
+        <activity android:name=".time" />
+        <activity android:name=".base" />
+        <activity android:name=".facebook" />
+        <activity android:name=".Refresh" />
+        <activity android:name=".Search" />
+        <activity android:name=".searchKeyword" />
+        <activity android:name=".searchTag" />
+        <activity android:name=".searchImages" />
+        <activity android:name=".searchResultFood" />
+        <activity android:name=".searchResultPeople" />
+        <activity android:name=".selectTag" />
+        <activity android:name=".camera" />
+        <activity android:name=".addFolder" />
+        <activity android:name=".addTag"></activity>
+    </application>
+
+</manifest>
